@@ -17,21 +17,8 @@ local variants = {
   },
 }
 
-local palette = {}
 
-function palette.setup(config)
-  local colors = config.colors or {}
-  local base_palette = variants.main
-  
-  local custom_palette = vim.tbl_extend("force", base_palette, {
-    primary = colors.primary or base_palette.primary,
-    success = colors.success or base_palette.success,
-    warning = colors.warning or base_palette.warning,
-    error = colors.error or base_palette.error,
-  })
-  
-  return custom_palette
-end
+local palette = {}
 
 palette = variants.main
 

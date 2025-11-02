@@ -1,7 +1,7 @@
 local M = {}
 
 function M.get(config)
-  local p = require('yugen.palette').setup(config)
+  local p = require 'yugen.palette'
 
   local theme = {}
   local groups = config.groups or {}
