@@ -32,6 +32,11 @@ Add the following line to your lazy configuration:
     transparent = false, -- true
     transparent_statusline = false, -- true
       })
+    -- custom colors
+    colors = {
+      primary = '#E2FD3B',
+      -- primary, success, warning, error
+    }
 
       vim.cmd.colorscheme('yugen')
     end,
