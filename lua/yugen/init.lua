@@ -42,6 +42,12 @@ local config = {
 			h6 = "color400",
 		},
 	},
+	colors = {
+		primary = nil,
+		success = nil,
+		warning = nil,
+		error = nil,
+	},
 	highlight_groups = {},
 }
 
