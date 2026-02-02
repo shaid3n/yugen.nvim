@@ -47,6 +47,7 @@ local config = {
 		success = nil,
 		warning = nil,
 		error = nil,
+		statusline = nil,
 	},
 	highlight_groups = {},
 }
@@ -89,6 +90,9 @@ function M.colorscheme()
 	end
 	if config.colors.error then
 		palette.error = config.colors.error
+	end
+	if config.colors.statusline then
+		palette.statusline = config.colors.statusline
 	end
 
 	local theme = require("yugen.theme").get(config)
