@@ -385,6 +385,27 @@ function M.get(config)
 		-- TS Context
 		TreesitterContextBottom = { style = "underline" },
 		TreesitterContextLineNumber = { fg = p.color300 },
+		-- Markdown & Render-Markdown support
+		["@markup.heading.1.markdown"] = { fg = p.primary, style = "bold" },
+		["@markup.heading.2.markdown"] = { fg = p.color300, style = "bold" },
+		["@markup.heading.3.markdown"] = { fg = p.color400, style = "bold" },
+		["@markup.heading.4.markdown"] = { fg = p.color500, style = "bold" },
+		["@markup.list.markdown"] = { fg = p.primary },
+		["@markup.list.unchecked.markdown"] = { fg = p.color500 },
+		["@markup.list.checked.markdown"] = { fg = p.success },
+		["@markup.link.label.markdown"] = { fg = p.primary },
+		["@markup.link.url.markdown"] = { fg = p.color500, style = "underline" },
+		["@markup.raw.markdown"] = { fg = p.color300 },
+		["@markup.italic.markdown"] = { style = "italic" },
+		["@markup.bold.markdown"] = { style = "bold" },
+		-- Support without treesitter
+		markdownH1 = { link = "@markup.heading.1.markdown" },
+		markdownH2 = { link = "@markup.heading.2.markdown" },
+		markdownH3 = { link = "@markup.heading.3.markdown" },
+		markdownHeadingDelimiter = { fg = p.color500 },
+		markdownLinkText = { fg = p.primary },
+		markdownCode = { fg = p.color300 },
+		markdownListMarker = { fg = p.primary },
 	}
 
 	vim.g.terminal_color_0 = p.color800
